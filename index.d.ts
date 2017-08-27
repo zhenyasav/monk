@@ -68,7 +68,7 @@ declare namespace Monk {
   export function id(): IObjectID // returns new generated ObjectId
   export function cast(obj?: Object | Array<any> | any): any
 
-  export default function (database: string | Array<string>, options?: {
+  export function Monk(database: string | Array<string>, options?: {
     collectionOptions?: Object,
     poolSize?: number,
     ssl?: boolean,
